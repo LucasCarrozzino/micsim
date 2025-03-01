@@ -13,6 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "baseHref": "/micsim/",
             "outputPath": "dist/micsim",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -27,6 +28,7 @@
               }
             ],
             "styles": [
+              "node_modules/98.css/dist/98.css",
               "src/styles.css"
             ],
             "scripts": [],

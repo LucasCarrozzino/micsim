@@ -9,4 +9,11 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'micsim';
+
+  selectedTab:string = 'tab 1'
+  tabs: string[] = ['tab 1','tab 2','tab 3']
+
+  clickTab(tab: string) {
+    this.selectedTab = tab
+  }
 }
