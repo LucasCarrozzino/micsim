@@ -20,7 +20,12 @@
     </menu>
     <div class="window" role="tabpanel">
       <div class="window-body">
-        <p >mostra a {{ selectedTab }}</p>
+        @switch (selectedTab) {
+          @case ('Code') {
+            <app-code></app-code>
+          }
+          @default {<p >mostra a {{ selectedTab }}</p>}
+        }
       </div>
     </div>
   </div>

@@ -1,0 +1,9 @@
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.correctSize {
+    flex: 1;
+    border: 1px solid #000;
+}

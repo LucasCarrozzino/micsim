@@ -1,0 +1,31 @@
+<div class="container">
+    
+    <ul class="tree-view correctSize">
+        <li>We can put</li>
+        <li><strong style="color: purple">✨ Whatever ✨</strong></li>
+        <li>We want in here</li>
+    </ul>
+
+    <div class="correctSize sunken-panel">
+        <table style="width: 100%;">
+            <thead>
+                <tr>
+                    <th>mneumonico</th>
+                    <th>instrução</th>
+                    <th>significado</th>
+                    <th>código binário</th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (inst of instList; track $index) {
+                    <tr>
+                        <td>{{ inst.sigla }}</td>
+                        <td>{{ inst.nome }}</td>
+                        <td>{{ inst.meaning }}</td>
+                        <td>{{ inst.code }}</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
